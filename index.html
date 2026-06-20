@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국어의 9품사 형성평가</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>📚 국어 9품사 마스터하기</h1>
+            <p id="progress-text">문제 1 / 5</p>
+        </header>
+
+        <div id="quiz-section">
+            <h2 id="question-text">여기에 문제가 표시됩니다.</h2>
+            <div id="options-container">
+                </div>
+            <button id="next-btn" class="hidden">다음 문제 ➔</button>
+        </div>
+
+        <div id="result-section" class="hidden">
+            <h2>🎉 수고하셨습니다!</h2>
+            <p id="score-text">당신의 점수는?</p>
+            <p id="feedback-text"></p>
+            <button id="restart-btn">처음부터 다시 풀기 ↺</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
