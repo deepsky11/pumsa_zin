@@ -1,0 +1,123 @@
+/* 기본 설정 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* 퀴즈 컨테이너 디자인 */
+.quiz-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+header {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #2c5282;
+    margin-bottom: 5px;
+}
+
+#progress-text {
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: bold;
+}
+
+/* 문제 및 선택지 디자인 */
+#question-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-btn {
+    background-color: #edf2f7;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-2px);
+}
+
+/* 정답/오답 표시 스타일 */
+.option-btn.correct {
+    background-color: #c6f6d5;
+    border-color: #48bb78;
+    color: #22543d;
+}
+
+.option-btn.wrong {
+    background-color: #fed7d7;
+    border-color: #f56565;
+    color: #742a2a;
+}
+
+/* 하단 버튼 디자인 */
+#next-btn, #restart-btn {
+    margin-top: 25px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+#next-btn:hover, #restart-btn:hover {
+    background-color: #2b6cb0;
+}
+
+/* 요소 숨기기용 클래스 */
+.hidden {
+    display: none !important;
+}
+
+/* 결과 창 디자인 */
+#score-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c5282;
+    margin: 15px 0;
+}
+
+#feedback-text {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
